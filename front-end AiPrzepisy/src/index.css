@@ -1,0 +1,309 @@
+
+body {
+  background-color: rgb(245, 234, 220);
+  font-family: "Elms Sans", sans-serif;
+  color: #2D4628;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.app {
+  background-color: white;
+  min-width: 480px;
+  width: 40vw;
+  min-height: 70vh;
+
+  border: 3px solid #7a8b63;
+  border-radius: 2rem;
+
+}
+
+.elms-sans-GoogleFont {
+  font-family: "Elms Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 200;
+  font-style: normal;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  margin-top: 1.5rem;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.main > form {
+  display: flex;
+  flex-direction: column;
+}
+
+/* PRZEKLĘTE PRZYCISKI (zrobione za pomocą AI)*/
+
+.addIngredientLabel{
+  display: flex;          
+  align-items: center;    
+  justify-content: center; 
+  gap: 10px;
+}
+
+.addIngBtn {
+  font-family: "Elms Sans", sans-serif;
+  background: linear-gradient(
+    to bottom,
+    #7ed957 0%,
+    #63c132 45%,
+    #4caf1e 100%
+  );
+  border-radius: 999px;
+  box-shadow:
+    inset 0 2px 3px rgba(255,255,255,0.35), 
+    inset 0 -2px 4px rgba(0,0,0,0.15),     
+    0 2px 4px rgba(0,0,0,0.2);  
+
+  color: #ffffff;
+
+  border-radius: 50px;
+  
+  border: none;
+  
+  padding: 10px 25px;
+  
+  font-weight: bold;
+  font-size: 18px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.addIngBtn:hover {
+  background: linear-gradient(
+    to bottom,
+    #8eea66 0%,
+    #6ed13b 45%,
+    #57c428 100%
+  );
+
+  box-shadow:
+    inset 0 2px 3px rgba(255,255,255,0.45),
+    inset 0 -2px 4px rgba(0,0,0,0.15),
+    0 4px 8px rgba(0,0,0,0.25);
+
+  transform: translateY(-1px);
+}
+
+.addIngBtn:active {
+  background: linear-gradient(
+    to bottom,
+    #63c132 0%,
+    #4caf1e 60%,
+    #429a18 100%
+  );
+
+  box-shadow:
+    inset 0 3px 6px rgba(0,0,0,0.25);
+
+  transform: translateY(1px);
+}
+
+.resetBtn {
+  padding: 10px 18px;
+  color: white;
+  font-weight: 600;
+  border: none;
+  border-radius: 999px;
+  cursor: pointer;
+  transition: all .15s ease;
+
+  background: linear-gradient(
+    to bottom,
+    #ff6b6b 0%,
+    #f04646 45%,
+    #d93636 100%
+  );
+
+  box-shadow:
+    inset 0 2px 3px rgba(255,255,255,0.35),
+    inset 0 -2px 4px rgba(0,0,0,0.18),
+    0 2px 4px rgba(0,0,0,0.2);
+}
+
+.resetBtn:hover {
+  background: linear-gradient(
+    to bottom,
+    #ff7b7b 0%,
+    #ff5656 45%,
+    #e64242 100%
+  );
+
+  box-shadow:
+    inset 0 2px 3px rgba(255,255,255,0.45),
+    inset 0 -2px 4px rgba(0,0,0,0.18),
+    0 4px 8px rgba(0,0,0,0.25);
+
+  transform: translateY(-1px);
+}
+
+.resetBtn:active {
+  background: linear-gradient(
+    to bottom,
+    #f04646 0%,
+    #d93636 60%,
+    #c22c2c 100%
+  );
+
+  box-shadow:
+    inset 0 3px 6px rgba(0,0,0,0.28);
+
+  transform: translateY(1px);
+}
+
+.searchReciepiesBtn {
+  padding: 16px 40px;
+  margin-top: 2rem;
+  color: white;
+  font-weight: 800;
+  font-size: 1rem;
+  border: none;
+  border-radius: 999px;
+  cursor: pointer;
+  transition: all .15s ease;
+
+  background: linear-gradient(
+    to bottom,
+    #ffb347 0%,
+    #ff9a1f 45%,
+    #f18700 100%
+  );
+
+  box-shadow:
+    inset 0 2px 3px rgba(255,255,255,0.35),
+    inset 0 -2px 4px rgba(0,0,0,0.18),
+    0 2px 4px rgba(0,0,0,0.2);
+}
+
+.searchReciepiesBtn:hover {
+  background: linear-gradient(
+    to bottom,
+    #ffc061 0%,
+    #ffa733 45%,
+    #ff920f 100%
+  );
+
+  box-shadow:
+    inset 0 2px 3px rgba(255,255,255,0.45),
+    inset 0 -2px 4px rgba(0,0,0,0.18),
+    0 4px 8px rgba(0,0,0,0.25);
+
+  transform: translateY(-1px);
+}
+
+.searchReciepiesBtn:active {
+  background: linear-gradient(
+    to bottom,
+    #ff9a1f 0%,
+    #f18700 60%,
+    #da7700 100%
+  );
+
+  box-shadow:
+    inset 0 3px 6px rgba(0,0,0,0.28);
+
+  transform: translateY(1px);
+}
+
+
+
+/*
+                KONIEC PRZYCISKÓW
+-----------------------------------------------------------
+-----------------------------------------------------------
+*/
+
+
+
+.textInputBox {
+  background-color: #ffffff;
+  font-family: "Elms Sans", sans-serif;
+  padding: 0.5rem;
+  font-size: 1rem;
+  border-radius: 1rem;
+  border: 2.5px solid #e68a00;
+  text-align: center;
+  outline: none;
+
+  -webkit-box-shadow: 3px 3px 15px 0px rgba(0,0,0,0.55); 
+  box-shadow: 3px 3px 15px 0px rgba(0,0,0,0.55); 
+}
+
+.textInputBox::placeholder {
+
+  color: #b3b3b3;
+}
+
+.textInputBox:focus {
+  -webkit-box-shadow: 5px 5px 15px 0px rgba(230, 138, 0, 0.55); 
+  box-shadow: 5px 5px 15px 0px rgba(230, 138, 0, 0.55);
+
+}
+
+.ingListEl{
+  max-width: 65%;
+
+}
+
+.ingListEl h3 {
+  font-size: 1.3rem;
+  justify-self: center;
+}
+
+.ingButtonsEl{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  justify-content: center;
+  
+}
+
+.ingBtn{
+  background: rgba(255, 188, 3, 0.6);
+  border: none;
+  border-radius: 1rem;
+  
+
+  font-family: "Elms Sans", sans-serif;
+  font-size: 1.1rem;
+  font-weight: 600;
+  padding: 1rem;
+}
+
+.ingBtn:hover {
+  background: rgba(255, 188, 3, 0.925);
+}
+
+.resetBtn{
+  margin-top: 1.5rem;
+  justify-self: center;
+}
+
+.searchReciepiesBtn {
+  margin-bottom: 2rem;
+}
+
+.RecipesSection {
+  margin: 2rem;
+}
